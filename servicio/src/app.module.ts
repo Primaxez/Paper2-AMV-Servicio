@@ -16,8 +16,8 @@ import { Doctor } from './modules/doctor/entities/doctor.entity';
       password: '',
       database: 'api',
       entities: [Doctor],
-      synchronize: true,
-      dropSchema: true}
+      synchronize: false,
+      dropSchema: false}
   )],
   controllers: [AppController],
   providers: [AppService],
