@@ -15,7 +15,7 @@ export class Doctor extends BaseEntity{
     @Column({type: 'blob'})
     readonly imagen: Buffer;
 
-    @ManyToMany(type => Especialidad, {cascade: true})
+    @ManyToMany(() => Especialidad, {cascade: true, eager: true})
     @JoinTable({
         name: 'doctor_especialidad',
         joinColumn: {name: 'id_doctor', referencedColumnName: 'id'},
