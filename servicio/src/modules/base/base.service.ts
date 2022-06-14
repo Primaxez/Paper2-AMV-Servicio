@@ -27,14 +27,6 @@ export class BaseService<T extends BaseEntity> implements IBaseService<T>{
   	return this.genericRepository.findOne({where: {id}},);
   }
 
-  getEspecialidad(id_especialidad: any): Promise<T[]> {
-    try {
-		return <Promise<T[]>>this.genericRepository.findBy(id_especialidad);
-	  } catch (error) {
-		throw new BadGatewayException(error);
-	}
-  }
-
   delete(id: number) {
 	try {
 		this.genericRepository.delete(id)
