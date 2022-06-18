@@ -120,7 +120,7 @@ insert into especialidad (id, nombre) values (13, 'Pediatría');
 insert into especialidad (id, nombre) values (14, 'Psiquiatría');
 insert into especialidad (id, nombre) values (15, 'Rehabilitación');
 insert into especialidad (id, nombre) values (16, 'Reumatología');
-insert into especialidad (id, nombre) values (17, 'Obstetricia');
+insert into especialidad (id, nombre) values (17, 'Ginecología');
 insert into especialidad (id, nombre) values (18, 'Oftalmología');
 insert into especialidad (id, nombre) values (19, 'Otorrinolaringología');
 insert into especialidad (id, nombre) values (20, 'Urología');
