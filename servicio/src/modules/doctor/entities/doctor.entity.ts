@@ -12,8 +12,8 @@ export class Doctor extends BaseEntity{
     readonly apellido: string;
     @Column()
     readonly genero: string;    
-    @Column({type: 'blob'})
-    readonly imagen: Buffer;
+    @Column()
+    readonly imagen: string;
 
     @ManyToMany(() => Especialidad, {cascade: true, eager: true})
     @JoinTable({

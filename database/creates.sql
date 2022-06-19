@@ -4,7 +4,7 @@ CREATE TABLE doctor (
     nombre      	VARCHAR(30) NOT NULL,
     apellido		VARCHAR(30) NOT NULL,
     genero			VARCHAR(1) NOT NULL,
-    imagen			MEDIUMBLOB,
+    imagen			VARCHAR (250) NOT NULL,
 
     CONSTRAINT dominio_genero CHECK (genero='M' OR genero='F')
 );
