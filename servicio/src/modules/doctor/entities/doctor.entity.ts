@@ -1,5 +1,5 @@
-import { BaseEntity } from "src/modules/base/base.entity";
-import { Especialidad } from "src/modules/especialidad/entities/especialidad.entity";
+import { BaseEntity } from "../../base/base.entity";
+import { Especialidad } from "../../especialidad/entities/especialidad.entity";
 
 import {Entity, Column, PrimaryGeneratedColumn, ManyToMany, JoinTable} from "typeorm"
 
