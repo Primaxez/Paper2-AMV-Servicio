@@ -33,7 +33,7 @@ Finalmente, ejecuta los scripts ubicados en la carpeta "database" en orden: crea
 
 # Ejecución del Servicio
 
-Para poder correr el servicio, ejecuta en la carpeta "servicio" lo siguiente:
+Para poder correr el servicio, la base de datos debe estar activa. Luego ejecuta en la carpeta "servicio" lo siguiente:
 
 ```
 npm start
