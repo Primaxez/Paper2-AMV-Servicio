@@ -9,7 +9,7 @@ Subgrupo conformado por Alejandro Pestana, Miguel Cuadrado y Vicente Mirabal del
 | Crear inserts de la base de datos (100 doctores, 20 especialidades, y 125 relaciones doctor-especialidad). Cambiar imagen de doctor a string para utilizar urls (Cloudinary) en lugar de blobs. (Commits "Crear Inserts", "Update inserts.sql" y "Cambiar imagen de Blob a string")                                                                                                             |                                                                                                                                                                                                                                  |
 | Usar Dependency Cruiser para verificar las dependencias y generar un gráfico de ellas. Cambiar imports restantes a relativos para que no hayan dependencias duplicadas en el gráfico (Commits "Incluir Dependency Cruiser" y "Cambiar imports a relativos")                                                                                                                                     |                                                                                                                                                                                                                                  |
 
-# Instalación y Setup
+## Instalación y Setup
 
 Primero que nada, se debe descargar e instalar [Node.JS](https://nodejs.org/es/). 
 
@@ -19,7 +19,7 @@ Después, es necesario instalar y descargar NestJS de forma global:
 npm i -g @nestjs/cli
 ```
 
-Debes descargar las dependencias utilizadas por el servicio ubicándote en la carpeta "servicio" y ejectuando:
+Debes descargar las dependencias utilizadas por el servicio ejectuando:
 
 ```
 npm install
@@ -27,14 +27,14 @@ npm install
 
 Se utiliza el manejador de bases de datos MySQL, por lo que debes descargar [XAMPP](https://www.apachefriends.org/es/index.html) o crear una imagen de MySQL en [Docker](https://www.docker.com).
 
-Debes levantar el manejador en el localhost.
+Debes levantar la bases de datos en el localhost.
 
-Finalmente, ejecuta los scripts ubicados en la carpeta "database" en orden: creates y luego inserts.
+Finalmente, ejecuta los scripts ubicados en la carpeta "database" en orden: creates.sql y luego inserts.sql
 
-# Ejecución del Servicio
+## Ejecución del Servicio
 
-Para poder correr el servicio, la base de datos debe estar activa. Luego ejecuta en la carpeta "servicio" lo siguiente:
+Para poder correr el servicio, la base de datos debe estar activa. Luego ejecuta lo siguiente:
 
 ```
-npm start
+npm run start:dev
 ```
